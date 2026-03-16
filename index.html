@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu sei lá qual contador rwer</title> 
+    
+</head>
+<body>
+    <h1>contador</h1> 
+    <p id="visor">0</p>
+    <section>
+<button onclick="add()">mais</button>
+<button onclick="dec()">menos</button>
+<button onclick="zer()">zerar</button>
+    </section>
+    <script>
+function render(){
+document.getElementById("visor").innerText=valor
+}
+let valor=0;
+ function add(){
+    valor++
+    render()
+ }
+ function dec(){
+    valor--
+    render()
+ } function zer(){
+    valor=0
+    render()
+ }
+
+    </script>
+</body>
+</html>
